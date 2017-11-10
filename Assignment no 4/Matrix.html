@@ -3,132 +3,22 @@
 <head>
 	<title>Matrix</title>
 	<link rel="stylesheet" href="style.css">
-	
-	
+	<meta charset="utf-8"/>
 </head>
-<body>
-
-	<div id = "center_layout">
-
-	<form>
-				        <center>
-								<input type="radio" name="color" value = "red" id = "red_id">
-								<label>RED</label>
-
-								
-								<input type="radio" name="color" value = "blue" id = "blue_id">
-								<label>BLUE</label>
-
-								
-		    					<input type="radio" name="color" value = "green" id = "green_id">
-		    					<label>GREEN</label>
-		    		</div>			
-        			
-        		<br><br>
-	  
-				
-
-        			<center>
-
-						<!-- 	<table class = "tab_bg">
-									<tr>
-					   						<td><input type="button" name="button1" class ="button_id"  onclick="generic(this)" id = "id1"></td>
-					   						<td><input type="button" name="button2" class ="button_id"  onclick="generic(this)" id = "id2"></td>
-					   						<td><input type="button" name="button3" class ="button_id"  onclick="generic(this)" id = "id3"></td>
-									</tr>
-
-									<tr>
-											<td><input type="button" name="button4" class ="button_id"  onclick="generic(this)" id = "id4"></td>
-											<td><input type="button" name="button5" class ="button_id"  onclick="generic(this)" id = "id5"></td>
-											<td><input type="button" name="button6" class ="button_id"  onclick="generic(this)" id = "id6"></td>
-									</tr>
-					
-									<tr>
-											<td><input type="button" name="button7" class ="button_id" onclick="generic(this)" id = "id7"></td>
-											<td><input type="button" name="button8" class ="button_id" onclick="generic(this)" id = "id8"></td>
-											<td><input type="button" name="button9" class ="button_id" onclick="generic(this)" id = "id9"></td>
-									</tr>
-					
-							</table> -->
-
-							
-
-					<br><br>
-					<center>
-							<input type="submit" name="reset" value="RESET" id ="button_both">
-							<input type="submit" name="randomize" value="RANDOMIZE" id="button_both" onclick = "shuffle()">
+		<body onload="initializeButton()">
+			<div class = "center_layout" id = "main_div"></div>
+				<div id = "radio_div">
+     	 		<center>
+     				<input type="radio" name="color" value = "red" id = "red">
+						<label>RED</label>
+						<input type="radio" name="color" value = "blue" id = "blue">
+						<label>BLUE</label>
+						<input type="radio" name="color" value = "green" id = "green">
+		    		<label>GREEN</label><br><br>
+		    		<input type="submit" name="reset" value="RESET" id ="button_one" onclick = "doReset()">
+					  <input type="submit" name="randomize" value="RANDOMIZE" id="button_two" onclick = "doShuffle()">
 					</center>
-        </center>
-   </form>			
-</body>
-
- <script type="text/javascript">
-
-
-	   var str = ["1","2","3","4","5","6","7","8","9"];
-	   for(var i=0; i<str.length; i++)
-	   {
-	    // var nextChar = str.charAt(i);
-	    var input = document.createElement("input");
-    
-	    input.type  = "Button"
-    	input.value = str[i]
-    	input.setAttribute("font-size","14px");
-    	input.setAttribute("background-color","#4CAF50");
-    	input.className = "button_id"
-    	document.body.appendChild(input);
-    	}
-   
-
- 			var array_value = ["1","2","3","4","5","6","7","8","9"]
- 			
-			 				
-			function generic(e)
-			{
-			   str = document.querySelector('input[name = "color"]:checked').value
-			   e.style.backgroundColor = str
-			}
-
-
-			function shuffle() {
-
-    				let counter = array_value.length;
-
-    				while (counter > 0) {
-
-        				let index = Math.floor(Math.random() * counter);
-        				counter--;
-        				let temp = array_value[counter];
-        				array_value[counter] = array_value[index];
-        				array_value[index] = temp;
-    }
-
-    // for(var i = 0; i < 9; i++)
-    // {
-    // 	str = "button" + i;
-    //  	document.getElementsByName("str").setAttributes("value",array_value[i])
-    // }
-    // 	document.getElementById("id2").setAttribute("value",array_value[i])
-    // 	document.getElementById("id3").setAttribute("value",array_value[i])
-    // 	document.getElementById("id4").setAttribute("value",array_value[i])
-    // 	document.getElementById("id5").setAttribute("value",array_value[i])
-    // 	document.getElementById("id6").setAttribute("value",array_value[i])
-    // 	document.getElementById("id7").setAttribute("value",array_value[i])
-    // 	document.getElementById("id8").setAttribute("value",array_value[i])
-    // 	document.getElementById("id9").setAttribute("value",array_value[i])
-
-    alert(array_value)
-    
-    doc = document, docFrag = document.createDocumentFragment();
-		for (i = 0; i < 9 ; i++){
-     	var elem = doc.createElement('input');
-     	elem.type = 'button';
-     	elem.value = i;
-     	docFrag.appendChild(elem);
-	}
-	doc.body.appendChild(docFrag);
-
-}
-
-	</script>
+				</div>      
+		</body>
+	<script src="Matrix.js"></script>
 </html>
