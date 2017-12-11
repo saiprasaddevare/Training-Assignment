@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='../apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+        <ul class='breadcrumb'>
+  <li>
+    <a href='../apidoc.html'>Student 1.0</a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>
+    Records
+    
+  </li>
+  
+</ul>
+
+<div class='page-header'>
+  <h1>
+    Records
+    <br>
+    <small>Create, Update, Delete the Student</small>
+  </h1>
+</div>
+
+
+
+
+
+
+<div class='accordion' id='accordion'>
+
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/records/index.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-index'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            GET /records
+          </a>
+          <br>
+          <small>GET all</small>
+        </h2>
+    </div>
+
+
+    <div id='description-index' class='collapse accordion-body'>
+      
+<h2 id="label-Description+">Description <span><a href="#label-Description+">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<pre>The id is used to find all student details from the tables.</pre>
+
+
+
+  <h3>Errors</h3>
+  
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+  <h3>Params</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Param name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>By default Available</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+    </tbody>
+  </table>
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/records/last.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-last'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            GET /last
+          </a>
+          <br>
+          <small>GET the last added student</small>
+        </h2>
+    </div>
+
+
+    <div id='description-last' class='collapse accordion-body'>
+      
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<pre>Add the recent record to the database.</pre>
+
+
+
+  <h3>Errors</h3>
+  
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+  <h3>Params</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Param name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>By default Available</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+    </tbody>
+  </table>
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/records/create.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-create'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            POST /records
+          </a>
+          <br>
+          <small>POST a new student into students</small>
+        </h2>
+    </div>
+
+
+    <div id='description-create' class='collapse accordion-body'>
+      
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Enter Valid type of Data to do the operation</p>
+
+
+
+  <h3>Errors</h3>
+  
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+  <h3>Params</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Param name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Grade </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Roll </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+    </tbody>
+  </table>
+
+  <h3>Headers</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Header name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <strong>X-CSRF-Token </strong><br>
+            <small>
+              optional
+            </small>
+          </td>
+          <td>
+            Avoid CSRF request to hack the application under your privilages
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/records/update.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-update'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            PATCH /records/:id
+          </a>
+          <br>
+          <small>UPDATE a student record using id</small>
+        </h2>
+        <h2>
+          <a href='#description-update'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            PUT /records/:id
+          </a>
+          <br>
+          <small>UPDATE a student record using id</small>
+        </h2>
+    </div>
+
+
+    <div id='description-update' class='collapse accordion-body'>
+      
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Enter Valid type of Data to do the operation</p>
+
+
+
+  <h3>Errors</h3>
+  
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+  <h3>Params</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Param name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Value is available at time of Updation</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Grade </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Roll </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+    </tbody>
+  </table>
+
+
+
+    </div>
+    <hr>
+    <div class='pull-right small'>
+      <a href='../apidoc/records/destroy.html'> >>> </a>
+    </div>
+    <div>
+        <h2>
+          <a href='#description-destroy'
+           class='accordion-toggle'
+           data-toggle='collapse'
+           data-parent='#accordion'>
+            DELETE /records/:id
+          </a>
+          <br>
+          <small>DELETE a student record using id</small>
+        </h2>
+    </div>
+
+
+    <div id='description-destroy' class='collapse accordion-body'>
+      
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Delete the record by using id.</p>
+
+
+
+  <h3>Errors</h3>
+  
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+  <h3>Params</h3>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Param name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>by default available at time of deletion</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+    </tbody>
+  </table>
+
+
+
+    </div>
+</div>
+
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer>&copy; 2017 Treeni Sustainability Solutions</footer>
+  </div>
+  <script type='text/javascript' src='../apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='../apidoc/javascripts/apipie.js'></script>
+</body>
+</html>

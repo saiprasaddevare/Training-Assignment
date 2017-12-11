@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+          <h4><a href='#records'>Records</a></h4>
+  <ul>
+      <li><a href='#records-index'>index</a></li>
+      <li><a href='#records-last'>last</a></li>
+      <li><a href='#records-create'>create</a></li>
+      <li><a href='#records-update'>update</a></li>
+      <li><a href='#records-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#students'>Students</a></h4>
+  <ul>
+      <li><a href='#students-index'>index</a></li>
+  </ul>
+
+
+
+<div>
+<p>STUDENT CURD</p>
+</div>
+
+<hr>
+
+
+  <ul class='breadcrumb'  id='records'>
+    <li><a href='#'>Student</a><span class='divider'>/</span></li>
+    <li class='active'>Records</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#records'>Records</a><br>
+      <small>Create, Update, Delete the Student</small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='records-index'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#records'>Records</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#records-index'>
+              GET /records
+            </a><br>
+            <small>GET all</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-Description+">Description <span><a href="#label-Description+">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<pre>The id is used to find all student details from the tables.</pre>
+
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>By default Available</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='records-last'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#records'>Records</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>last</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#records-last'>
+              GET /last
+            </a><br>
+            <small>GET the last added student</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<pre>Add the recent record to the database.</pre>
+
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>By default Available</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='records-create'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#records'>Records</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>create</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#records-create'>
+              POST /records
+            </a><br>
+            <small>POST a new student into students</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Enter Valid type of Data to do the operation</p>
+
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Grade </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Roll </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='records-update'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#records'>Records</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>update</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#records-update'>
+              PATCH /records/:id
+            </a><br>
+            <small>UPDATE a student record using id</small>
+          </h3>
+          <h3>
+            <a href='#records-update'>
+              PUT /records/:id
+            </a><br>
+            <small>UPDATE a student record using id</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Enter Valid type of Data to do the operation</p>
+
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Value is available at time of Updation</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Grade </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>Roll </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='records-destroy'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#records'>Records</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>destroy</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#records-destroy'>
+              DELETE /records/:id
+            </a><br>
+            <small>DELETE a student record using id</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-Description">Description<span><a href="#label-Description">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Delete the record by using id.</p>
+
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 500 </span></td>
+				<td>Internal Server Error</td>
+			</tr>
+			<tr>
+				<td><span class="label label-inverse"> 404 </span></td>
+				<td>User Profile not yet created</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>by default available at time of deletion</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+  <ul class='breadcrumb'  id='students'>
+    <li><a href='#'>Student</a><span class='divider'>/</span></li>
+    <li class='active'>Students</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#students'>Students</a><br>
+      <small>List the Student details</small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='students-index'>
+        <li>
+          <a href='#'>Student</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#students'>Students</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#students-index'>
+              GET 
+            </a><br>
+            <small>Main_Page Student list</small>
+          </h3>
+      </div>
+
+      <div>
+        
+<h2 id="label-DESCRIPTION">DESCRIPTION<span><a href="#label-DESCRIPTION">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This API is for displaying all the CRUD stuff.This is an Single Page
+Application. <br>So all the operation is performed in a single page.</p>
+
+
+
+      </div>
+  </div>
+
+  
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer>&copy; 2017 Treeni Sustainability Solutions</footer>
+  </div>
+  <script type='text/javascript' src='./apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/apipie.js'></script>
+</body>
+</html>
